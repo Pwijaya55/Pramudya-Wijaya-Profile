@@ -102,7 +102,7 @@ body {
     text-align: left;
     background-image: url('background.jpg');
     background-size: cover;
-    background-position: right;
+    background-position: right center;
     background-attachment: fixed;
     position: relative;
 }
