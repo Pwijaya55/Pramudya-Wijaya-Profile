@@ -100,7 +100,7 @@ body {
     justify-content: flex-start;
     padding-left: 5%;
     text-align: left;
-    background-image: url('src/background.jpg');
+    background-image: url('background.jpg');
     background-size: cover;
     background-position: right center;
     background-attachment: fixed;
