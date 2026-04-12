@@ -476,6 +476,14 @@ section {
     }
 }
 
+/* Khusus untuk iPhone dan layar kecil lainnya */
+@media (max-width: 1024px) {
+    .hero {
+        background-attachment: scroll; /* Mengatasi bug zoom di iOS */
+        background-position: right center; /* Sesuai keinginan kamu sebelumnya */
+    }
+}
+
 /* Particle Background */
 #particles {
     position: fixed;
