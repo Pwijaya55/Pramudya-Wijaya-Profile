@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pramudya Wijaya - Personal Website</title>
-    <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <header class="navbar">
@@ -16,7 +17,7 @@
             <nav class="nav-menu">
                 <a href="#home" class="nav-link">Home</a>
                 <a href="#about" class="nav-link">About</a>
-                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#services" class="nav-link">Services</a>
                 <a href="#contact" class="nav-link">Contact</a>
             </nav>
             <div class="hamburger">
@@ -31,8 +32,8 @@
         <section id="home" class="hero">
             <div class="hero-content">
                 <h1 class="hero-title">Pramudya<br>Wijaya</h1>
-                <p class="hero-subtitle">Software Engineer & Web Developer</p>
-                <a href="#about" class="cta-button">Learn More</a>
+                <p class="hero-subtitle">Frontend Web Developer</p>
+                <a href="src/CV_Pramudya_Wijaya.pdf" class="cta-button" download>Download CV</a>
             </div>
         </section>
 
@@ -41,38 +42,38 @@
                 <h2 class="section-title">About Me</h2>
                 <div class="about-content">
                     <div class="profile-image">
-                        <img src="header.jpeg" alt="Pramudya Wijaya" loading="lazy">
+                        <img src="src/Profil.jpeg" alt="Pramudya Wijaya" loading="lazy">
                     </div>
-                    <p>Hi, I'm Pramudya Wijaya, a passionate software engineer with expertise in modern web technologies. I love creating responsive and beautiful websites like this one.</p>
-                    <p>Skills: HTML, CSS, JavaScript, React, Node.js, Python.</p>
+                    <p>Hi! I am a Frontend Web Developer focused on turning creative concepts into functional, high-quality websites. Using HTML, CSS, and JavaScript, I build clean and professional interfaces that prioritize user experience. My goal is to create digital solutions that are not only visually appealing but also fast and responsive on every device.</p>
+                
                 </div>
             </div>
         </section>
 
-        <section id="projects" class="projects">
+        <section id="services" class="services">
             <div class="container">
-                <h2 class="section-title">Projects</h2>
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <div class="project-thumbnail">
-                            <img src="jpeg" alt="Project 1" loading="lazy">
+                <h2 class="section-title">Services</h2>
+                <div class="services-grid">
+                    <div class="services-card">
+                        <div class="services-thumbnail">
+                            <img src="src/jpeg" alt="services 1" loading="lazy">
                         </div>
-                        <h3>Project 1</h3>
-                        <p>A modern web app built with React.</p>
+                        <h3>Responsive Web Development</h3>
+                        <p>Creating flexible layouts that look great on mobile, tablet, and desktop screens using modern CSS techniques.</p>
                     </div>
-                    <div class="project-card">
-                        <div class="project-thumbnail">
-                            <img src="jpeg(1)" alt="Project 2" loading="lazy">
+                    <div class="services-card">
+                        <div class="services-thumbnail">
+                            <img src="src/jpeg(1)" alt="services 2" loading="lazy">
                         </div>
-                        <h3>Project 2</h3>
-                        <p>Backend API with Node.js and Express.</p>
+                        <h3>Frontend Development</h3>
+                        <p>Building clean, interactive, and efficient websites from scratch using pure HTML, CSS, and vanilla JavaScript.</p>
                     </div>
-                    <div class="project-card">
-                        <div class="project-thumbnail">
-                            <img src="Muhchche.jpeg" alt="Project 3" loading="lazy">
+                    <div class="services-card">
+                        <div class="services-thumbnail">
+                            <img src="src/header.jpeg" alt="services 3" loading="lazy">
                         </div>
-                        <h3>Project 3</h3>
-                        <p>Mobile-responsive portfolio site.</p>
+                        <h3>Ad Landing Pages</h3>
+                        <p>Developing high-performance landing pages optimized for digital marketing campaigns like Meta and Google Ads.</p>
                     </div>
                 </div>
             </div>
@@ -84,9 +85,15 @@
                 <div class="contact-content">
                     <p>Let's connect!</p>
                     <div class="contact-links">
-                        <a href="mailto:emailpramudya@gmail.com">Email</a>
-                        <a href="https://instagram.com/wijayapramudyaa">Instagram</a>
-                        <a href="https://github.com/pwijaya55">GitHub</a>
+                        <a href="mailto:emailpramudya@gmail.com" class="contact-item" data-text="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://instagram.com/wijayapramudyaa" class="contact-item" data-text="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://github.com/pwijaya55" class="contact-item" data-text="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -97,6 +104,11 @@
         <p>&copy; 2026 Pramudya Wijaya. All rights reserved.</p>
     </footer>
 
+    <button id="scroll-up" title="Kembali ke atas">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-up" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M7.776 5.553a.5.5 0 0 1 .448 0l6 3a.5.5 0 1 1-.448.894L8 6.56 2.224 9.447a.5.5 0 1 1-.448-.894z"/>
+</svg>
+    </button>
     <script src="script.js"></script>
 </body>
 </html>

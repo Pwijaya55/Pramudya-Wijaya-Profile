@@ -77,3 +77,20 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll('section').forEach(section => {
     observer.observe(section);
 });
+
+// Scroll up button
+const scrollUpBtn = document.getElementById('scroll-up');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+        scrollUpBtn.classList.add('show');
+    } else {
+        scrollUpBtn.classList.remove('show');
+    }
+});
+
+scrollUpBtn.addEventListener('click', () => {
+    document.getElementById('home').scrollIntoView({
+        behavior: 'smooth'
+    });
+});
